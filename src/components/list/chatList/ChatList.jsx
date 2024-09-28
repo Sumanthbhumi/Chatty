@@ -72,7 +72,7 @@ const ChatList = () => {
     <div className="chatList">
       <div className="search">
         <div className="searchBar">
-          <img src="/search.png" />
+          <img src="./search.png" />
           <input
             type="texts"
             placeholder="Search"
@@ -82,7 +82,7 @@ const ChatList = () => {
           />
         </div>
         <img
-          src={addMode ? "/minus.png" : "/plus.png"}
+          src={addMode ? "./minus.png" : "./plus.png"}
           alt="plus"
           className="add"
           onClick={() => setAddMode(!addMode)}
