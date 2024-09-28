@@ -32,4 +32,22 @@
       cursor: pointer;
     }
   }
+
+  button {
+    /* padding: 15px; */
+    background-color: rgba(230, 74, 105, 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(230, 74, 105, 0.8);
+    }
+
+    &.logout {
+      padding: 10px;
+      background-color: #1a73e8;
+    }
+  }
 }

@@ -34,6 +34,7 @@ const App = () => {
           {chatId && <Detail />}
         </>
       ) : (
+        //reload the page
         <Login />
       )}
       <Notification />

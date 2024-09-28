@@ -36,7 +36,10 @@ const Login = () => {
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password);
 
-      const imgUrl = await upload(avatar.file);
+      let imgUrl = "./avatar.png"; // Default image URL
+      if (avatar.file) {
+        imgUrl = await upload(avatar.file);
+      }
 
       await setDoc(doc(db, "users", res.user.uid), {
         username,
@@ -73,6 +76,7 @@ const Login = () => {
       toast.error(err.message);
     } finally {
       setLoading(false);
+      window.location.reload();
     }
   };
 

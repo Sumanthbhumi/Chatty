@@ -7,7 +7,8 @@
 }
 
 body {
-  background-image: url("/bg.jpg");
+  /* background-image: url("/bg.jpg"); */
+  background: linear-gradient(#e0ffff, #87ceeb, #00bfff, #1e90ff);
   display: flex;
   align-items: center;
   justify-content: center;
